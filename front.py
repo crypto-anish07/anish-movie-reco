@@ -36,10 +36,10 @@ def recommend(movie):
     return reco_movies, reco_posters
 
 # ------------------ LOAD DATA ------------------
-movies_dict = pickle.load(open('netflix/movies_dct.pkl', 'rb'))
+movies_dict = pickle.load(open('movies_dct.pkl', 'rb'))
 movies = pd.DataFrame(movies_dict)
 
-similarity = pickle.load(open('netflix/similarity.pkl', 'rb'))
+similarity = pickle.load(open('similarity.pkl', 'rb'))
 
 # ------------------ UI ------------------
 st.title(" 🎬 Movie Recommendation System ")
